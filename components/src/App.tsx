@@ -1,8 +1,7 @@
-import { lazy, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { lazy } from "react";
+
 import "./App.css";
-const Header = lazy(() => import("first/Header"));
+const Header = lazy(() => import("app1/Header"));
 
 function App() {
   return (
