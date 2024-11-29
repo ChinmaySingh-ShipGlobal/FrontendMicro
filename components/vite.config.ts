@@ -8,8 +8,9 @@ export default defineConfig({
     react(),
     federation({
       name: "components",
-      remotes: {
-        app1: "http://localhost:3003/assets/remoteEntry.js",
+      filename: "remoteEntry.js",
+      exposes: {
+        "./Header": "./src/Header",
       },
       shared: ["react", "react-dom"],
     }),

@@ -1,11 +1,9 @@
-import Header from "./Header";
+import { lazy } from "react";
+
+const Header = lazy(() => import("components/Header"));
 
 function App() {
-  return (
-    <div className="mt-8 bg-red-800 h-48 flex items-center justify-center">
-      <Header />
-    </div>
-  );
+  return <Header />;
 }
 
 export default App;

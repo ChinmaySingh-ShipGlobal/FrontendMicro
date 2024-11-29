@@ -1,10 +1,11 @@
 export default function Header() {
   return (
-    <div className="bg bg-yellow-100 w-full">
+    <div className="w-40 h-20 bg-slate-500">
+      <h3>Header inside app1</h3>
       <input
         type="text"
-        className="bg bg-white w-full"
         onChange={(e) => console.log(`I am changing by ${e.target.value} `)}
+        className="border border-blue-700"
       />
     </div>
   );
